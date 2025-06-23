@@ -22,21 +22,21 @@ import Location from "./Components/New/Location";
 import Layout from "./Layout";
 
 const App = () => {
-  const [phone, setPhone] = useState('+919653720083');
+  const [phone, setPhone] = useState("+919653720083");
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout phone={phone}/>}>
+        <Route path="/" element={<Layout phone={phone} />}>
           <Route
             index
             element={
               <div className="relative w-full overflow-hidden">
                 {/* <Nav /> */}
-                <HomeImageComponent phone={phone}/>
-                <AffordableRoomPage phone={phone}/>
+                <HomeImageComponent phone={phone} />
+                <AffordableRoomPage phone={phone} />
                 <AffordableRoomPage2 />
                 <ACRoom phone={phone} />
-                <NonACRoom  phone={phone}/>
+                <NonACRoom phone={phone} />
                 <Review />
                 {/* <Footer /> */}
                 <div className="fixed flex h-[200px] items-center  justify-between p-10 w-full bottom-[20px] sm:bottom-0 left-0 ">
@@ -53,7 +53,7 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/location" element={<Location phone={phone}/>} />
+          <Route path="/location" element={<Location phone={phone} />} />
           {/* Catch-all route to redirect to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
