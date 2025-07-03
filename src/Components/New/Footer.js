@@ -32,7 +32,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Footer = () => {
+const Footer = ({phone}) => {
   const footerRef = useRef(null);
 
   useEffect(() => {
@@ -77,13 +77,13 @@ const Footer = () => {
         {/* Middle Section */}
         <div className="footer-middle">
           <h3 className="text-lg font-semibold mb-2">Stay</h3>
-          <p className="text-sm">+919799589829</p>
+          <p className="text-sm">{phone}</p>
           <p className="text-sm">info@birladharamshala.com</p>
         </div>
 
         {/* End Section */}
         <div className="footer-middle flex flex-col items-start justify-center md:items-center">
-          <p className="text-sm ">&copy; 2024. All rights reserved.</p>
+          <p className="text-sm">&copy; 2024. All rights reserved.</p>
           <p className="text-sm">powered by gowappilyinfotech</p>
         </div>
       </div>

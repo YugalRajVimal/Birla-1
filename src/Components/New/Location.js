@@ -43,7 +43,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-const Location = () => {
+const Location = ({phone}) => {
   const textSectionRef = useRef(null);
   const mapRef = useRef(null);
 
@@ -84,7 +84,7 @@ const Location = () => {
             Colony, Ayodhya, Uttar Pradesh 224123
           </p>
           <p>
-            <strong>Phone No. :</strong>+919799589829
+            <strong>Phone No. :</strong>{phone}
           </p>
         </div>
       </div>

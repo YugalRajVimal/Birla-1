@@ -81,7 +81,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const NonACRoom = () => {
+const NonACRoom = ({phone}) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -169,7 +169,7 @@ const NonACRoom = () => {
             </p>
             <p className="text-xl font-semibold">Affordable rates</p>
             <button className="bg-[#17fb18] w-fit px-6 py-3 text-sm sm:text-lg text-black border border-[1px] border-black rounded-full">
-              <a href="http://wa.me/+919799589829" className="h-full">
+              <a href={`http://wa.me/${phone}`} className="h-full">
                 RESERVE NOW
               </a>
             </button>

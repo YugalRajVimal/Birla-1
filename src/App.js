@@ -22,7 +22,7 @@ import Location from "./Components/New/Location";
 import Layout from "./Layout";
 
 const App = () => {
-  const [phone, setPhone] = useState("+919653720083");
+  const [phone, setPhone] = useState("+919358439662");
   return (
     <BrowserRouter>
       <Routes>

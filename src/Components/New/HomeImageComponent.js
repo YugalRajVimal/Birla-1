@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-const HomeImageComponent = () => {
+const HomeImageComponent = ({phone}) => {
   const imageRef = useRef(null);
   const titleRef = useRef([]);
   const textRef = useRef(null);
@@ -73,7 +73,7 @@ const HomeImageComponent = () => {
           className="bg-[#17fb18] px-6 py-3 text-sm sm:text-lg text-black border border-[1px] border-white rounded-full"
         >
           <a
-            href="http://wa.me/+919799589829"
+            href={`http://wa.me/${phone}`}
             className="text-white h-full w-full"
           >
             BOOK NOW

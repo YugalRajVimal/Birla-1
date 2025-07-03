@@ -38,7 +38,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AffordableRoomPage = () => {
+const AffordableRoomPage = ({phone}) => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -76,7 +76,7 @@ const AffordableRoomPage = () => {
           parking.
         </p>
         <button className="bg-[#17fb18] w-fit px-6 py-3 text-sm sm:text-lg text-black border border-[1px] border-black rounded-full">
-          <a href="http://wa.me/+919799589829" className="h-full">
+          <a href={`http://wa.me/${phone}`} className="h-full">
             BOOK NOW
           </a>
         </button>
